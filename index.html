@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <!-- Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- AUDIO PLAYER (Hidden) -->
+    <audio id="bg-music" loop>
+        <source src="sampaijadidebupiano.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- BUTTON TO PLAY/PAUSE MUSIC -->
+    <button class="music-btn" id="musicToggle" onclick="toggleMusic()">🎵</button>
+
+    <!-- 1. COVER PAGE -->
+    <div id="cover">
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+            <p class="cover-subtitle">The Wedding of</p>
+            <h1 class="cover-title">Andini & Niko</h1>
+            <p class="guest-name">Dear, <span id="to-name">My Friend</span></p>
+            <button class="btn-open" onclick="openInvitation()">Buka Undangan</button>
+        </div>
+    </div>
+
+    <!-- 2. MAIN INVITATION CONTENT -->
+    <div id="invitation-content">
+        
+        <!-- Header / Couple Intro -->
+        <div class="section">
+            <h2>The Weding Of</h2>
+            <div class="couple-photo"></div>
+            <h2>Andini & Niko</h2>
+            <p class="font">Senin, 2 Maret 2030</p>
+        </div>
+
+        <!-- Couple Names -->
+        <div class="section">
+            <h2 class="verse">Welcome to Our Wedding</h2>
+            <p class="verse">"Dan di antara tanda-tanda (kebesaran)-Nya adalah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+            <p class="verse"></p>
+            <div class="man-photo"></div>
+            <h2 class="karo-header">Niko Tarigan</h2>
+            <p class="verse">Putra dari Bapak Sucipto Tarigan & Ibu Greniky Br Sembiring</p>
+            <br>
+            <h2 class="karo-header">&</h2>
+            <br>
+            <div class="woman-photo"></div>
+            <h2 class="karo-header">Andini Br Ginting</h2>
+            <p>Putri dari Bapak Andre Ginting & Ibu Dinica Putri Br Sitepu</p>
+        </div>
+
+        <!-- Event Details -->
+        <div class="section">
+            <h2 class="karo-header">Wedding Event</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Akad</h3>
+                    <p>Saturday, 25 Dec 2024</p>
+                    <p>09:00 AM - 11:00 AM</p>
+                    <p>Jakarta Hall</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Resepsi</h3>
+                    <p>Saturday, 25 Dec 2024</p>
+                    <p>11:00 AM - 14:00 PM</p>
+                    <p>Jakarta Hall</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Map Placeholder -->
+       <section class="section">
+        <h2 class="karo-header">Lokasi Acara</h2>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=3.5640801,98.4167224&z=15&output=embed"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps?q=3.5640801,98.4167224"
+           target="_blank"
+           class="btn-map">
+           Buka di Google Maps
+        </a>
+    </section>
+
+
+        <section class="section">
+
+    <h2 class="karo-header">Berikan Ucapan & Doa</h2>
+
+    <div class="card">
+
+        <h3 class="comment-count">5 Comments</h3>
+
+        <form class="comment-form">
+            <input type="text" placeholder="Nama" required>
+            
+            <textarea placeholder="Ucapan" rows="12" required></textarea>
+            
+            <select required>
+                <option value="">Konfirmasi Kehadiran</option>
+                <option>Hadir</option>
+                <option>Tidak Hadir</option>
+            </select>
+
+            <button type="submit" class="btn-submit">
+                ➤ Kirim
+            </button>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="logic.js"></script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>Created by <span class="brand">Wisshh</span></p>
+    </div>
+</footer>
+</body>
+</fotter>
+</html>
